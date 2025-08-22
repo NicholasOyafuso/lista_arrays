@@ -10,12 +10,25 @@
     A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
     */
 
-    //ENTRADA
+      //ENTRADA
+    const f1 = prompt("digite uma fruta");
+    const f2 = prompt("digite uma fruta");
+    const f3 = prompt("digite uma fruta");
+
+    const b1 = prompt("digite uma bebida");
+    const b2 = prompt("digite uma bebida");
+    const b3 = prompt("digite uma bebida");
 
 
     //PROCESSAMENTO
+    let frutas =[f1,f2,f3];
+    let bebidas =[b1,b2,b3];
+    let final = frutas.concat(bebidas);
 
 
     //SAÍDA
-
+    document.write("As frutas a serem compradas são:"+ fruta,"<br>");
+    document.write("As bebidas a serem compradas são:"+ bebida,"<br>");
+    document.write(" A lista completa de compras é:"+ final);
+    
 </script>

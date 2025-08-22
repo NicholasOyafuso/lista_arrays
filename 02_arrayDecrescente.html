@@ -5,13 +5,16 @@
     Peça para um usuário inserir três números. Crie um array com os três números, colocando-os em ordem decrescente. Para ordenar, NÃO use o método reverse();
     Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
     */
-
     //ENTRADA
-
+   const n1= Number(prompt("digite um numero").trim);
+    const n2= Number(prompt("digite outro numero").trim);
+    const n3= Number(prompt("digite outro numero").trim); 
 
     //PROCESSAMENTO
-
+let decrescente=[n1,n2,n3];
+    decrescente.sort((a, b) => b - a);
+    let rs = decrescente.join(" - ");
 
     //SAÍDA
-
+document.write(rs);
 </script>
