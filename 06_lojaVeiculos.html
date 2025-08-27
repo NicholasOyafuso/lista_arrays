@@ -13,11 +13,30 @@
     */
 
     //ENTRADA
+  let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+          let carroNome = prompt("Digite o nome do veículo:");
+        let tipoCarro = prompt("Esse veículo é SUV, Sedan ou Hatch?").toLowerCase();
+
+
 
 
     //PROCESSAMENTO
+      if (tipo === "suv") {
+            carrosSUV.push(carroNome);
+        } else if (tipoCarro === "sedan") {
+            carrosSedan.push(carroNome);
+        } else if (tipoCarro === "hatch") {
+            carrosHatch.push(carroNome);
+        } else {
+            alert("Tipo inválido! Esse veículo não foi adicionado, informe um veículo válido!!");
+        }
 
 
     //SAÍDA
+     document.write("SUVs: " + carrosSUV.join(", ") + "<br>");
+    document.write("Sedans: " + carrosSedan.join(", ") + "<br>");
+    document.write("Hatchs: " + carrosHatch.join(", ") + "<br>");
 
 </script>
