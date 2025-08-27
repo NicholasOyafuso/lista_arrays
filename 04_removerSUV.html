@@ -10,15 +10,18 @@
 
     //ENTRADA
     let remover= prompt("qual carro você deseja remover?");
-        let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
 
 
 
     //PROCESSAMENTO
-    const indice=carrosSUV.indexOf(remover);
+    const indice = carrosSUV.indexOf(remover);
+    
     if (indice !== -1) {
     carrosSUV.splice(indice, 1);
+        
 } else {
+        
     alert("Carro não encontrado na lista!");
 }
     
@@ -26,6 +29,7 @@
 
     //SAÍDA
     document.write("Lista antiga de SUVs: Tiggo, Sportage, Tucson, EcoSport<br>");
-document.write("Nova lista de SUVs: " + carrosSUV.join(", ") + "<br>");
+    
+    document.write("Nova lista de SUVs: " + carrosSUV.join(", ") + "<br>");
 
 </script>
