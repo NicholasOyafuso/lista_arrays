@@ -13,13 +13,25 @@
     */
 
     //ENTRADA
+ 
+        const nomeDasCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+        let corInformada = prompt("Informe uma dessas cores: azul, amarelo, verde, branco, preto, marrom, cinza.").toLowerCase().trim();
+       
 
 
     //PROCESSAMENTO
-
+let numeroAleatorio = Math.floor(Math.random() * 7);
+        let numeroDaCor=nomeDasCores[numeroAleatorio];
+        
 
     //SAÍDA
-
+if(corInformada===numeroDaCor){
+            document.write('Parabéns!!!🥳')
+    
+        }else{
+    
+            document.write('Não foi dessa vez');
+        }
 
     /*
     Para gerar números aleatórios, há a função random, da biblioteca Math. Nesse caso, o comando deverá ser o Math.random().
